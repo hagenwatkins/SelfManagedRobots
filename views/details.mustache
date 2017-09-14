@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Deets</title>
+    <link rel="stylesheet" href="/details.css"/>
+    
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <div class="Top">
+        <img class="avi" src="{{avatar}}"/>
+        <div class="profileContact">
+          <h1>{{name}}</h1>
+          <p>
+            {{#address.country}}
+              {{address.city}}, {{address.country}}
+            {{/address.country}}
+            {{^address.country}}
+            {{/address.country}}
+            |
+            {{#job}}
+              <span>{{job}}, {{company}}</span>
+            {{/job}}
+            {{^job}}
+              <span class="ue">Available for Hire!</span>
+            {{/job}}
+          </p>
+        </div>
+      </div>
+
+      <div class="Bottom">
+        {{#university}}
+        <div class="education">
+          <div class="Title">Education</div>
+          <div class="Info">{{university}}</div>
+        </div>
+        {{/university}}
+        <div class="skills">
+          <div class="skillsTitle">Skills</div>
+          <div class="skillsInfo">
+            {{#skills}}
+            <div>{{.}}</div>
+            {{/skills}}
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,24 @@
+#container{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: auto;
+  margin: auto;
+  justify-content: space-between;
+
+}
+.users{
+  border-style: solid;
+  border-width: thin;
+  flex-basis: 20%;
+  padding: 1%;
+  margin: 1%;
+
+}
+a{
+  text-decoration: none;
+}
+a:link{color:inherit}
+a:active{color:inherit}
+a:visited{color:inherit}
+a:hover{color:inherit}
